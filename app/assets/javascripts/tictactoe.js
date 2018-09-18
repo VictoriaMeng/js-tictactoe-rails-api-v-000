@@ -53,7 +53,7 @@ function showGames(games){
 
 function addButton(game){
   const id = game["id"];
-  if (buttonExists(id)) {
+  unless (buttonExists(id)) {
     const button = document.createElement("button");
     buildButton(button, id)
     addLoadListener(button, id);
