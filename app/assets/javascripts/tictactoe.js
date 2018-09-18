@@ -5,7 +5,6 @@ $(document).ready(function() {
 })
 
 function attachListeners() {
-<<<<<<< HEAD
   addSaveListener();
   addPreviousListeners();
   addClearListener();
@@ -21,24 +20,6 @@ function addClearListener() {
 function addSaveListener() {
   $("#save")[0].addEventListener("click", function() {
     save();
-=======
-<<<<<<< HEAD
-  $("#save")[0].addEventListener("click", function() {
-    save();
-    // debugger;
-=======
-  saveButton.addEventListener("click", function() {
-    const state = $.makeArray(squares).map(s => s.innerHTML);
-    const posting = $.post("/games", JSON.stringify({"state": state}));
-    // alert("Hello");
-    // posting.done(function(game) {
-    //   debugger;
-    //   const button = document.createElement("button");
-    //   button.innerHTML = "Game" + game["data"]["id"];
-    //   games.innerHTML += button
-    // });
->>>>>>> 24c2d07534bf82f67d0f6effb18f40bd570cb332
->>>>>>> 5271e097d430db158928be211b349ec208573b3d
   });
 };
 
